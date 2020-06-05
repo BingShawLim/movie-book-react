@@ -1,8 +1,8 @@
 # Project Name
-> project description
+A movie searching app. practice purpose only. https://movie-book-react.herokuapp.com
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./movieBookReact.jpeg)
 
 ## Technologies
 * React
