@@ -1,5 +1,5 @@
 # Movie Book
-A movie searching app. practice purpose only. https://movie-book-react.herokuapp.com
+A basic movie searching app creacted with ReactJS. practice purpose only. https://movie-book-react.herokuapp.com
 
 ## Screenshots
 ![Example screenshot](./movieBookReact.jpeg)
