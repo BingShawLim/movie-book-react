@@ -1,4 +1,4 @@
-# Project Name
+# Movie Book
 A movie searching app. practice purpose only. https://movie-book-react.herokuapp.com
 
 ## Screenshots
