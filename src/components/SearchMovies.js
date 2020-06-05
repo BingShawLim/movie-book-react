@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import MovieCard from "./MovieCard"
 
-export default function SearchMovies() {
+export default function SearchMovies(props) {
 
     const [query, setQuery] = useState("")
     const [movies, setMovies] = useState([])
@@ -22,14 +22,7 @@ export default function SearchMovies() {
     const makeCards = () => {
         return movies.map(movie => {
             return (
-                <MovieCard
-                key={movie.id}
-                image={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${movie.poster_path}`}
-                date={movie.release_date}
-                title={movie.title}
-                rate={movie.vote_average}
-                overview={movie.overview}
-                />
+                <MovieCard movie={movie} key={movie.id}/>
             )
         })
     }
@@ -48,7 +41,9 @@ export default function SearchMovies() {
             />
             <button className="button" type="submit">Search</button>
         </form>
-        {makeCards()}
+        <div className="card-list">
+         {makeCards()}
+        </div>
         </>
     )
 }
